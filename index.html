@@ -5,6 +5,12 @@
   
   const params = new URLSearchParams(document.location.search);
   const no_pelajar = params.get("no_pelajar");
-  window.location.href = 'https://jtmkvp.com/kvdagang/index.html?no_pelajar='+no_pelajar;
+  const individu = params.get("individu");
   
+  if(individu=1){
+    window.location.href = 'https://jtmkvp.com/kvdagang/index.html?no_pelajar='+no_pelajar;
+  }
+  else {
+    window.location.href = 'https://jtmkvp.com/kvdagang/';
+  }
 </script>
