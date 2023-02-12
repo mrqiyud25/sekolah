@@ -1,7 +1,10 @@
 <!-- <meta http-equiv="refresh" content="0; URL='https://jtmkvp.com/kvdagang/'" /> -->
 
 <script>
-  var no_pelajar = GetURLParameter('no_pelajar');
+//   var no_pelajar = GetURLParameter('no_pelajar');
+  
+  const params = new URLSearchParams(document.location.search);
+  const no_pelajar = params.get("no_pelajar");
   window.location.href = 'http://example.com?no_pelajar='+no_pelajar;
   
 </script>
