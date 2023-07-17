@@ -9,12 +9,15 @@
   const URL = 'https://jtmkvp.com/kvdagang/index.html?no_pelajar=';
   
   if(individu == 1){
-    window.location.href = URL+no_pelajar;
+    // window.location.href = URL+no_pelajar;
+    location.replace(URL+no_pelajar)
   }
   else if(individu == "SLDN"){
-    window.location.href = URL+no_pelajar+"&sldn=1"+;
+    // window.location.href = URL+no_pelajar+"&sldn=1"+;
+    location.replace(URL+no_pelajar+"&sldn=1")
   }
   else {
-    window.location.href = URL;
+    // window.location.href = URL;
+    location.replace(URL)
   }
 </script>
